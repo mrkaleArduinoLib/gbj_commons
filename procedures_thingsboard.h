@@ -76,6 +76,7 @@ RPC_Response cbSetPeriodMeasure(const RPC_Data &data)
   return RPC_Response(NULL, 0);
 }
 
+#ifdef PIN_LED
 RPC_Response cbGetLedBlink(const RPC_Data &data)
 {
   SERIAL_VALUE("cbGetLedBlink", timerLed.isActive());
@@ -98,5 +99,6 @@ RPC_Response cbSetLedBlink(const RPC_Data &data)
   }
   return RPC_Response(NULL, 0);
 }
+#endif
 
 #endif
