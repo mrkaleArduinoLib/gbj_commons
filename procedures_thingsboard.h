@@ -22,6 +22,7 @@
 
 #include "app_params.h"
 #include "apptb_device.h"
+#include "config_hw.h"
 #include "gbj_appthermo_ds.h"
 #include "gbj_timer.h"
 
@@ -76,7 +77,6 @@ RPC_Response cbSetPeriodMeasure(const RPC_Data &data)
   return RPC_Response(NULL, 0);
 }
 
-#ifdef PIN_LED
 RPC_Response cbGetLedBlink(const RPC_Data &data)
 {
   SERIAL_VALUE("cbGetLedBlink", timerLed.isActive());
@@ -90,15 +90,12 @@ RPC_Response cbSetLedBlink(const RPC_Data &data)
   if (blink)
   {
     timerLed.resume();
-    digitalWrite(PIN_LED, LOW); // Reverse wiring
   }
   else
   {
     timerLed.halt();
-    digitalWrite(PIN_LED, HIGH); // Reverse wiring
   }
   return RPC_Response(NULL, 0);
 }
-#endif
 
 #endif
