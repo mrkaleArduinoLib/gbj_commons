@@ -49,7 +49,6 @@ RPC_Response cbSetPeriodPublish(const RPC_Data &data)
 {
   params.setPeriodPublish((byte)data);
   device_tb.setPeriod((unsigned long)data * 1000);
-  device_tb.setAttribChange(THINGSBOARD_ATTRIBUTE_PERIOD_PUBLISH_IDX);
   SERIAL_VALUE("cbSetPeriodPublish", device_tb.getPeriod());
   return RPC_Response(NULL, 0);
 }
@@ -72,7 +71,6 @@ RPC_Response cbSetPeriodMeasure(const RPC_Data &data)
 {
   params.setPeriodTemperature((byte)data);
   thermo.setPeriod((unsigned long)data * 1000);
-  device_tb.setAttribChange(THINGSBOARD_ATTRIBUTE_PERIOD_MEASURE_TEMPERATURE_IDX);
   SERIAL_VALUE("cbSetPeriodMeasure", thermo.getPeriod());
   return RPC_Response(NULL, 0);
 }

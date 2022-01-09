@@ -26,7 +26,5 @@
 #define THINGSBOARD_ATTRIBUTE_HOSTNAME "hostname"
 #define THINGSBOARD_ATTRIBUTE_OTAPORT "portOTA"
 #define THINGSBOARD_ATTRIBUTE_PERIOD_WIFI "periodWifi"
-// Device dynamic attributes
-#define THINGSBOARD_ATTRIBUTE_PERIOD_PUBLISH "periodPublish"
 
 #endif
