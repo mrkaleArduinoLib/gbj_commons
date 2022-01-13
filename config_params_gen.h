@@ -32,7 +32,6 @@ static const size_t progmemBufferLen = 20;
 
 // Telemetry -- Device telemetry attributes changed periodically and frequently
 static const char rssiTelem[] PROGMEM = "rssi";
-static const char temperatureTelem[] PROGMEM = "temperature";
 // Statistics for connection to ThingsBoard IoT platform
 static const char connRetriesTelem[] PROGMEM = "connRetries";
 static const char connErrorsTelem[] PROGMEM = "connErrors";
@@ -45,8 +44,6 @@ static const char connMaxTelem[] PROGMEM = "connMax";
 // and published at every change
 static const char periodPublishPrm[] PROGMEM = "periodPublish";
 static const char mcuRestartsPrm[] PROGMEM = "mcuRestarts";
-static const char periodMeasurePrm[] PROGMEM = "periodMeasure";
-static const char periodTempPrm[] PROGMEM = "periodTemp";
 
 // Statics -- Device static attributes usually initiated at start of an MCU
 // and published just once.
@@ -58,10 +55,5 @@ static const char portOTAStatic[] PROGMEM = "portOTA";
 static const char hostnameStatic[] PROGMEM = "hostname";
 static const char addressIPStatic[] PROGMEM = "addressIP";
 static const char addressMACStatic[] PROGMEM = "addressMAC";
-// Temperature measurement
-static const char tempResBitStatic[] PROGMEM = "tempResBit";
-static const char tempResDegStatic[] PROGMEM = "tempResDeg";
-static const char tempSmoothStatic[] PROGMEM = "tempSmooth";
-static const char tempSensorsStatic[] PROGMEM = "tempSensors";
 
 #endif
