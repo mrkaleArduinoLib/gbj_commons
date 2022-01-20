@@ -30,22 +30,17 @@
 // Should be adjusted for the longest parameter name.
 static const size_t progmemBufferLen = 20;
 
-// Telemetry -- Device telemetry attributes changed periodically and frequently
+// Telemetry -- Device telemetry attributes published periodically, because they
+// change frequently.
 static const char rssiTelem[] PROGMEM = "rssi";
-// Statistics for connection to ThingsBoard IoT platform
-static const char connRetriesTelem[] PROGMEM = "connRetries";
-static const char connErrorsTelem[] PROGMEM = "connErrors";
-static const char connCntTelem[] PROGMEM = "connCnt";
-static const char connCurTelem[] PROGMEM = "connCur";
-static const char connMinTelem[] PROGMEM = "connMin";
-static const char connMaxTelem[] PROGMEM = "connMax";
 
-// Parameters -- Device dynamic attributes usually stored in EEPROM
-// and published at every change
-static const char periodPublishPrm[] PROGMEM = "periodPublish";
+// Parameters -- Device dynamic attributes changed occassionally, usually
+// stored in EEPROM, and published at a change only
+static const char addressIPStatic[] PROGMEM = "addressIP";
 static const char mcuRestartsPrm[] PROGMEM = "mcuRestarts";
+static const char periodPublishPrm[] PROGMEM = "periodPublish";
 
-// Statics -- Device static attributes usually initiated at start of an MCU
+// Statics -- Device static attributes initiated at start of an MCU
 // and published just once.
 // -- Initialized at compile time --
 static const char versionStatic[] PROGMEM = "version";
@@ -53,7 +48,6 @@ static const char brokerStatic[] PROGMEM = "broker";
 static const char portOTAStatic[] PROGMEM = "portOTA";
 // -- Initialized at run time --
 static const char hostnameStatic[] PROGMEM = "hostname";
-static const char addressIPStatic[] PROGMEM = "addressIP";
 static const char addressMACStatic[] PROGMEM = "addressMAC";
 
 #endif

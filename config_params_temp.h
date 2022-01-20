@@ -26,13 +26,14 @@
   #include <Particle.h>
 #endif
 
-// Telemetry -- Device telemetry attributes changed periodically and frequently
+// Telemetry -- Device telemetry attributes published periodically, because they
+// change frequently.
 static const char temperatureTelem[] PROGMEM = "temperature";
 static const char temperature_01Telem[] PROGMEM = "temperature_01";
 static const char temperature_02Telem[] PROGMEM = "temperature_02";
 
-// Parameters -- Device dynamic attributes usually stored in EEPROM
-// and published at every change
+// Parameters -- Device dynamic attributes changed occassionally, usually
+// stored in EEPROM, and published at a change only
 static const char periodTempPrm[] PROGMEM = "periodTemp";
 
 // Statics -- Device static attributes usually initiated at start of an MCU
