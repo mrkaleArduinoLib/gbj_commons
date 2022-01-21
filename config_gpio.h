@@ -40,23 +40,23 @@ const uint8_t PIN_CLK = 6;
 // Naming
 const byte GPIO_NAME = 0;
 const byte GPIO_FNC = 1;
-const String GPIO[][2] = { { "D3", "LED_BUILTIN_AUX/FLASH" },
-                           { "TX", "TXD0" },
-                           { "D4", "LED_BUILTIN/TXD1" },
-                           { "RX", "RXD0" },
-                           { "D2", "SDA" },
-                           { "D1", "SCL" },
-                           { "CLK", "SDCLK/SCLK" },
-                           { "SD0", "SDD0/MISO" },
-                           { "SD1", "SDD1/MOSI" },
-                           { "SD2", "SDD2" },
-                           { "SD3", "SDD3" },
-                           { "CMD", "SDCMD/CS" },
-                           { "D6", "HMISO" },
-                           { "D7", "HMOSI/RXD2" },
-                           { "D5", "HSCLK" },
-                           { "D8", "HCS/TXD2" },
-                           { "D0", "WAKE" } };
+const String GPIO[][2] = {{"D3", "FLASH"},
+                          {"TX", "TXD0"},
+                          {"D4", "LED_BUILTIN/TXD1"},
+                          {"RX", "RXD0"},
+                          {"D2", "SDA"},
+                          {"D1", "SCL"},
+                          {"CLK", "SDCLK/SCLK"},
+                          {"SD0", "SDD0/MISO"},
+                          {"SD1", "SDD1/MOSI"},
+                          {"SD2", "SDD2"},
+                          {"SD3", "SDD3"},
+                          {"CMD", "SDCMD/CS"},
+                          {"D6", "HMISO"},
+                          {"D7", "HMOSI/RXD2"},
+                          {"D5", "HSCLK"},
+                          {"D8", "HCS/TXD2"},
+                          {"D0", "LED_BUILTIN_AUX/WAKE"}};
 #endif
 
 #endif
