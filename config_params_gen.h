@@ -30,8 +30,7 @@
 // Should be adjusted for the longest parameter name.
 static const size_t progmemBufferLen = 20;
 
-// Telemetry -- Device telemetry attributes published periodically, because they
-// change frequently.
+// Telemetry -- Device measures changed frequently, so published periodically.
 static const char rssiTelem[] PROGMEM = "rssi";
 
 // Parameters -- Device dynamic attributes changed occassionally, usually
