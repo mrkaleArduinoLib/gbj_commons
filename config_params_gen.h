@@ -48,5 +48,6 @@ static const char portOTAStatic[] PROGMEM = "portOTA";
 // -- Initialized at run time --
 static const char hostnameStatic[] PROGMEM = "hostname";
 static const char addressMACStatic[] PROGMEM = "addressMAC";
+static const char mcuBootStatic[] PROGMEM = "mcuBoot";
 
 #endif
