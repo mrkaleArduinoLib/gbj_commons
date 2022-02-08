@@ -11,6 +11,7 @@
 */
 #ifndef CONFIG_PARAMS_TEMP_H
 #define CONFIG_PARAMS_TEMP_H
+#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.0.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>

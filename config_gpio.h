@@ -9,6 +9,7 @@
 */
 #ifndef CONFIG_GPIO_H
 #define CONFIG_GPIO_H
+#define CONFIG_GPIO_VERSION "CONFIG_GPIO 1.0.0"
 
 #include <Arduino.h>
 
