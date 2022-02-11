@@ -1,0 +1,11 @@
+{
+  "name": "gbj_commons",
+  "keywords": "includes, parameters, fonts",
+  "description": "Package contains a set of include files with parameters names, fonts, etc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrkaleArduinoLib/gbj_commons.git"
+  },
+  "version": "1.0.0",
+  "frameworks": "arduino"
+}
