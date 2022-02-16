@@ -37,7 +37,6 @@ static const char rssiTelem[] PROGMEM = "rssi";
 // Parameters -- Device dynamic attributes changed occassionally, usually
 // stored in EEPROM, and published at a change only
 static const char mcuRestartsPrm[] PROGMEM = "mcuRestarts";
-static const char addressIpPrm[] PROGMEM = "addressIP";
 static const char periodPublishPrm[] PROGMEM = "periodPublish";
 
 // Statics -- Device static attributes initiated at start of an MCU
@@ -48,6 +47,7 @@ static const char brokerStatic[] PROGMEM = "broker";
 static const char hostnameStatic[] PROGMEM = "hostname";
 static const char portOTAStatic[] PROGMEM = "portOTA";
 // -- Initialized at run time --
+static const char addressIpStatic[] PROGMEM = "addressIP";
 static const char addressMacStatic[] PROGMEM = "addressMAC";
 static const char mcuBootStatic[] PROGMEM = "mcuBoot";
 
