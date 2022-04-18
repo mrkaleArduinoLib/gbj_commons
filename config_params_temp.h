@@ -1,17 +1,17 @@
 /*
   NAME:
-  Names of generic parameters for temperature measurement
+  Labels of parameters for temperature measurement
 
   DESCRIPTION:
   Parameters for temperature measurement regardless of utilized temperature
   sensors.
-  The names are stored in program flash memory in order to save
+  The labels are stored in program flash memory in order to save
   SRAM of a microcontroller.
 
 */
 #ifndef CONFIG_PARAMS_TEMP_H
 #define CONFIG_PARAMS_TEMP_H
-#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.0.0"
+#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.1.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -27,22 +27,13 @@
   #include <Particle.h>
 #endif
 
-// Telemetry -- Device telemetry attributes published periodically, because they
-// change frequently.
-static const char temperatureTelem[] PROGMEM = "temperature";
-static const char temperature_01Telem[] PROGMEM = "temperature_01";
-static const char temperature_02Telem[] PROGMEM = "temperature_02";
-
-// Parameters -- Device dynamic attributes changed occassionally, usually
-// stored in EEPROM, and published at a change only
-static const char periodTempPrm[] PROGMEM = "periodTemp";
-
-// Statics -- Device static attributes usually initiated at start of an MCU
-// and published just once.
-// -- Initialized at run time --
-static const char tempResBitStatic[] PROGMEM = "tempResBit";
-static const char tempResDegStatic[] PROGMEM = "tempResDeg";
-static const char tempSmoothStatic[] PROGMEM = "tempSmooth";
-static const char tempSensorsStatic[] PROGMEM = "tempSensors";
+static const char lblPeriodTemp[] PROGMEM = "periodTemp";
+static const char lblTempResBit[] PROGMEM = "tempResBit";
+static const char lblTempResDeg[] PROGMEM = "tempResDeg";
+static const char lblTempSmooth[] PROGMEM = "tempSmooth";
+static const char lblTempSensors[] PROGMEM = "tempSensors";
+static const char lblTemp[] PROGMEM = "temperature";
+static const char lblTemp_01[] PROGMEM = "temperature_01";
+static const char lblTemp_02[] PROGMEM = "temperature_02";
 
 #endif
