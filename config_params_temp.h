@@ -15,8 +15,8 @@
 
 #if defined(__AVR__)
   #include <Arduino.h>
-  #include <inttypes.h>
   #include <avr/pgmspace.h>
+  #include <inttypes.h>
 #elif defined(ESP8266)
   #include <Arduino.h>
   #include <pgmspace.h>
@@ -31,10 +31,8 @@ static const char lblPeriodTemp[] PROGMEM = "periodTemp";
 static const char lblTempResBit[] PROGMEM = "tempResBit";
 static const char lblTempResDeg[] PROGMEM = "tempResDeg";
 static const char lblTempSmooth[] PROGMEM = "tempSmooth";
-static const char lblTempSensors[] PROGMEM = "tempSensors";
-static const char lblTempIds[] PROGMEM = "tempIds";
+static const char lblTempSensors[] PROGMEM = "tempSensorCnt";
+static const char lblTempIds[] PROGMEM = "tempSensorIds";
 static const char lblTemp[] PROGMEM = "temperature";
-// static const char lblTemp_01[] PROGMEM = "temperature_01";
-// static const char lblTemp_02[] PROGMEM = "temperature_02";
 
 #endif
