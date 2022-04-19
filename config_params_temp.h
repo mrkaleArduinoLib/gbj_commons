@@ -11,7 +11,7 @@
 */
 #ifndef CONFIG_PARAMS_TEMP_H
 #define CONFIG_PARAMS_TEMP_H
-#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.1.0"
+#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.2.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -32,8 +32,9 @@ static const char lblTempResBit[] PROGMEM = "tempResBit";
 static const char lblTempResDeg[] PROGMEM = "tempResDeg";
 static const char lblTempSmooth[] PROGMEM = "tempSmooth";
 static const char lblTempSensors[] PROGMEM = "tempSensors";
+static const char lblTempIds[] PROGMEM = "tempIds";
 static const char lblTemp[] PROGMEM = "temperature";
-static const char lblTemp_01[] PROGMEM = "temperature_01";
-static const char lblTemp_02[] PROGMEM = "temperature_02";
+// static const char lblTemp_01[] PROGMEM = "temperature_01";
+// static const char lblTemp_02[] PROGMEM = "temperature_02";
 
 #endif
