@@ -11,7 +11,7 @@
 */
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
-#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.1.0"
+#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.2.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -27,7 +27,9 @@
   #include <Particle.h>
 #endif
 
+static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 static const char lblMcuRestarts[] PROGMEM = "mcuRestarts";
+static const char lblMcuStartTime[] PROGMEM = "mcuStartTime";
 static const char lblPeriodPublish[] PROGMEM = "periodPublish";
 static const char lblRssi[] PROGMEM = "rssi";
 static const char lblVersion[] PROGMEM = "version";
@@ -36,6 +38,5 @@ static const char lblHostname[] PROGMEM = "hostname";
 static const char lblPortOTA[] PROGMEM = "portOTA";
 static const char lblAddressIp[] PROGMEM = "addressIP";
 static const char lblAddressMac[] PROGMEM = "addressMAC";
-static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 
 #endif
