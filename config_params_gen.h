@@ -11,7 +11,7 @@
 */
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
-#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.4.0"
+#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.5.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -27,19 +27,27 @@
   #include <Particle.h>
 #endif
 
+// Periods
+static const char lblPeriodPublish[] PROGMEM = "periodPublish";
+static const char lblPeriodWifi[] PROGMEM = "periodWifi";
+static const char lblPeriodRefresh[] PROGMEM = "periodRefresh";
+
+// Firmware
+static const char lblProject[] PROGMEM = "project";
+static const char lblVersion[] PROGMEM = "version";
 static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 static const char lblMcuRestarts[] PROGMEM = "mcuRestarts";
 static const char lblMcuStartTime[] PROGMEM = "mcuStartTime";
 static const char lblMcuUpTime[] PROGMEM = "mcuUpTime";
-static const char lblPeriodPublish[] PROGMEM = "periodPublish";
-static const char lblPeriodWifi[] PROGMEM = "periodWifi";
+
+// Wifi
 static const char lblRssi[] PROGMEM = "rssi";
-static const char lblProject[] PROGMEM = "project";
-static const char lblVersion[] PROGMEM = "version";
-static const char lblBroker[] PROGMEM = "broker";
 static const char lblHostname[] PROGMEM = "hostname";
 static const char lblPortOTA[] PROGMEM = "portOTA";
 static const char lblAddressIp[] PROGMEM = "addressIP";
 static const char lblAddressMac[] PROGMEM = "addressMAC";
+
+// IoT
+static const char lblBroker[] PROGMEM = "broker";
 
 #endif
