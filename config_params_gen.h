@@ -11,7 +11,7 @@
 */
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
-#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.5.0"
+#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.6.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -31,6 +31,7 @@
 static const char lblPeriodPublish[] PROGMEM = "periodPublish";
 static const char lblPeriodWifi[] PROGMEM = "periodWifi";
 static const char lblPeriodRefresh[] PROGMEM = "periodRefresh";
+static const char lblPeriodReconnect[] PROGMEM = "periodReconnect";
 
 // Firmware
 static const char lblProject[] PROGMEM = "project";
