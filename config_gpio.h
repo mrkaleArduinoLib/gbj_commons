@@ -9,7 +9,7 @@
 */
 #ifndef CONFIG_GPIO_H
 #define CONFIG_GPIO_H
-#define CONFIG_GPIO_VERSION "CONFIG_GPIO 1.0.0"
+#define CONFIG_GPIO_VERSION "CONFIG_GPIO 1.1.0"
 
 #include <Arduino.h>
 
@@ -38,6 +38,11 @@ const uint8_t PIN_CMD = 11;
 const uint8_t PIN_SD0 = 7;
 const uint8_t PIN_CLK = 6;
 // *** ESP8266 - NodeMCU (Amica) ***
+// *** ESP8266-01 ***
+const uint8_t PIN_2 = 1;
+const uint8_t PIN_3 = 2;
+const uint8_t PIN_5 = 0;
+const uint8_t PIN_7 = 3;
 // Naming
 const byte GPIO_NAME = 0;
 const byte GPIO_FNC = 1;
