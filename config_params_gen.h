@@ -2,6 +2,8 @@
   NAME:
   Labels (names) of generic parameters
 
+  VERSION: 1.7.0
+
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
   communicates over Wifi and with IoT platforms.
@@ -11,7 +13,6 @@
 */
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
-#define CONFIG_PARAMS_GEN_VERSION "CONFIG_PARAMS_GEN 1.6.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
@@ -36,6 +37,7 @@ static const char lblPeriodReconnect[] PROGMEM = "periodReconnect";
 // Firmware
 static const char lblProject[] PROGMEM = "project";
 static const char lblVersion[] PROGMEM = "version";
+static const char lblBoots[] PROGMEM = "boots";
 static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 static const char lblMcuRestarts[] PROGMEM = "mcuRestarts";
 static const char lblMcuStartTime[] PROGMEM = "mcuStartTime";
