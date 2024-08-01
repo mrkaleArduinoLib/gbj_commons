@@ -2,6 +2,8 @@
   NAME:
   Labels of parameters for temperature measurement
 
+  VERSION: 1.2.0
+
   DESCRIPTION:
   Parameters for temperature measurement regardless of utilized temperature
   sensors.
@@ -11,7 +13,6 @@
 */
 #ifndef CONFIG_PARAMS_TEMP_H
 #define CONFIG_PARAMS_TEMP_H
-#define CONFIG_PARAMS_TEMP_VERSION "CONFIG_PARAMS_TEMP 1.2.0"
 
 #if defined(__AVR__)
   #include <Arduino.h>
