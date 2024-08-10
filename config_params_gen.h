@@ -2,7 +2,7 @@
   NAME:
   Labels (names) of generic parameters
 
-  VERSION: 1.10.0
+  VERSION: 1.11.0
 
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
@@ -33,6 +33,7 @@ static const char lblPeriodWifi[] PROGMEM = "periodWifi";
 static const char lblPeriodRssi[] PROGMEM = "periodRssi";
 static const char lblPeriodThingspeak[] PROGMEM = "periodThingspeak";
 static const char lblPeriodFirebase[] PROGMEM = "periodFirebase";
+static const char lblPeriodFirebaseRead[] PROGMEM = "periodFirebaseRead";
 static const char lblPeriodRefresh[] PROGMEM = "periodRefresh";
 static const char lblPeriodReconnect[] PROGMEM = "periodReconnect";
 
