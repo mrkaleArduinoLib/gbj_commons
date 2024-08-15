@@ -1,6 +1,6 @@
 {
   "name": "gbj_commons",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Package contains a set of include files with parameters names, fonts, etc.",
   "keywords": "includes, parameters, fonts",
   "repository": {
