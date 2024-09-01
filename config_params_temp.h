@@ -2,7 +2,7 @@
   NAME:
   Labels of parameters for temperature measurement
 
-  VERSION: 1.2.0
+  VERSION: 1.3.0
 
   DESCRIPTION:
   Parameters for temperature measurement regardless of utilized temperature
@@ -35,5 +35,8 @@ static const char lblTempSmooth[] PROGMEM = "tempSmooth";
 static const char lblTempSensors[] PROGMEM = "tempSensorCnt";
 static const char lblTempIds[] PROGMEM = "tempSensorIds";
 static const char lblTemp[] PROGMEM = "temperature";
+static const char lblTempMax[] PROGMEM = "tempMax";
+static const char lblTempMin[] PROGMEM = "tempMin";
+static const char lblTempAvg[] PROGMEM = "tempAvg";
 
 #endif
