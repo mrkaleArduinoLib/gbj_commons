@@ -54,4 +54,6 @@ static const char lblPortOTA[] PROGMEM = "portOTA";
 static const char lblAddressIp[] PROGMEM = "addressIP";
 static const char lblAddressMac[] PROGMEM = "addressMAC";
 
+// Externals
+static const char lblRelayStatus[] PROGMEM = "relayStatus";
 #endif
