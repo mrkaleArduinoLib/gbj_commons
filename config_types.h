@@ -3,7 +3,7 @@
   NAME:
   Custom types and structures.
 
-  VERSION: 1.0.0
+  VERSION: 1.0.1
 
   DESCRIPTION:
   Definition of shared types, structures, unions, etc.
@@ -20,6 +20,6 @@ typedef struct EspnowMessage
   unsigned int deviceId;
   int rssi;
   float temperature;
-} EspnowMessage0;
+} EspnowMessage;
 
 #endif
