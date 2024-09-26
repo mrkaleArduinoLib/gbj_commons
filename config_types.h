@@ -3,7 +3,7 @@
   NAME:
   Custom types and structures.
 
-  VERSION: 1.1.0
+  VERSION: 1.2.0
 
   DESCRIPTION:
   Definition of shared types, structures, unions, etc.
@@ -15,12 +15,6 @@
 #include <Arduino.h>
 
 // Structure to exchange RSSI and temperature among MCUs via ESP-NOW protocol
-typedef struct EspnowMessage
-{
-  word deviceId;
-  int rssi;
-  float temperature;
-} EspnowMessage;
 typedef struct EspnowRssiTemperature
 {
   word deviceId;
