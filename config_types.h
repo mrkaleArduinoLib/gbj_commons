@@ -3,7 +3,7 @@
   NAME:
   Custom types and structures.
 
-  VERSION: 1.0.1
+  VERSION: 1.1.0
 
   DESCRIPTION:
   Definition of shared types, structures, unions, etc.
@@ -14,12 +14,24 @@
 
 #include <Arduino.h>
 
-// Structure to exchange data among MCUs via ESP-NOW protocol
+// Structure to exchange RSSI and temperature among MCUs via ESP-NOW protocol
 typedef struct EspnowMessage
 {
-  unsigned int deviceId;
+  word deviceId;
   int rssi;
   float temperature;
 } EspnowMessage;
+typedef struct EspnowRssiTemperature
+{
+  word deviceId;
+  int rssi;
+  float temperature;
+} EspnowRssiTemperature;
+
+// Structure to exchange heartbeat among MCUs via ESP-NOW protocol
+typedef struct EspnowHeartbeat
+{
+  word deviceId;
+} EspnowHeartbeat;
 
 #endif
