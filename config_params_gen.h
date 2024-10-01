@@ -28,14 +28,6 @@
   #include <Particle.h>
 #endif
 
-// Periods
-static const char lblPeriodRssi[] PROGMEM = "periodRssi";
-static const char lblPeriodEspnow[] PROGMEM = "periodEspnow";
-static const char lblPeriodWifi[] PROGMEM = "periodWifi";
-static const char lblPeriodThingspeak[] PROGMEM = "periodThingspeak";
-static const char lblPeriodRefresh[] PROGMEM = "periodRefresh";
-static const char lblPeriodReconnect[] PROGMEM = "periodReconnect";
-
 // Firmware
 static const char lblProject[] PROGMEM = "project";
 static const char lblVersion[] PROGMEM = "version";
@@ -45,7 +37,6 @@ static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 static const char lblMcuRestarts[] PROGMEM = "mcuRestarts";
 static const char lblMcuStartTime[] PROGMEM = "mcuStartTime";
 static const char lblMcuUpTime[] PROGMEM = "mcuUpTime";
-static const char lblLedStatus[] PROGMEM = "ledStatus";
 
 // Wifi
 static const char lblRssi[] PROGMEM = "rssi";
@@ -56,10 +47,5 @@ static const char lblAddressMac[] PROGMEM = "addressMAC";
 
 // Externals
 static const char lblUpdateNtp[] PROGMEM = "updateNtp";
-static const char lblRelayStatus[] PROGMEM = "relayStatus";
-static const char lblRelayStatusTime[] PROGMEM = "relayStatusTime";
-static const char lblInetOutageTime[] PROGMEM = "internetOutageTime";
-static const char lblInetRevertTime[] PROGMEM = "internetRevertTime";
-static const char lblAddressIpExt[] PROGMEM = "addressIpExt";
-static const char lblAddressIpExtTime[] PROGMEM = "addressIpExtTime";
+static const char lblLedStatus[] PROGMEM = "ledStatus";
 #endif
