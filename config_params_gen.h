@@ -14,18 +14,14 @@
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
 
+#include <Arduino.h>
 #if defined(__AVR__)
-  #include <Arduino.h>
-  #include <inttypes.h>
   #include <avr/pgmspace.h>
+  #include <inttypes.h>
 #elif defined(ESP8266)
-  #include <Arduino.h>
   #include <pgmspace.h>
 #elif defined(ESP32)
-  #include <Arduino.h>
   #include <pgmspace.h>
-#elif defined(PARTICLE)
-  #include <Particle.h>
 #endif
 
 // Firmware
