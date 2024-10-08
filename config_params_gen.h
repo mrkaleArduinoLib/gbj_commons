@@ -46,6 +46,6 @@ static const char lblUpdateNtp[] PROGMEM = "updateNtp";
 static const char lblLedStatus[] PROGMEM = "ledStatus";
 
 // Errors
-static const char lblErrorGsheet[] PROGMEM = "errorGsheet";
+static const char lblErrorGsheets[] PROGMEM = "errorGsheets";
 static const char lblErrorThermo[] PROGMEM = "errorThermo";
 #endif
