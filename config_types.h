@@ -3,7 +3,7 @@
   NAME:
   Custom types and structures.
 
-  VERSION: 1.2.0
+  VERSION: 1.3.0
 
   DESCRIPTION:
   Definition of shared types, structures, unions, etc.
@@ -27,5 +27,12 @@ typedef struct EspnowHeartbeat
 {
   word deviceId;
 } EspnowHeartbeat;
+
+// Structure to exchange uptime among MCUs via ESP-NOW protocol
+typedef struct EspnowUptime
+{
+  word deviceId;
+  unsigned long uptime;
+} EspnowUptime;
 
 #endif
