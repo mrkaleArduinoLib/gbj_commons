@@ -2,7 +2,7 @@
   NAME:
   Labels (names) of generic parameters
 
-  VERSION: 1.25.0
+  VERSION: 1.26.0
 
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
@@ -23,6 +23,12 @@
 #elif defined(ESP32)
   #include <pgmspace.h>
 #endif
+
+// General
+static const char lblStatus[] PROGMEM = "status";
+static const char lblTimestamp[] PROGMEM = "timestamp";
+static const char lblOutage[] PROGMEM = "outage";
+static const char lblRevert[] PROGMEM = "revert";
 
 // Firmware
 static const char lblProject[] PROGMEM = "project";
