@@ -2,7 +2,7 @@
   NAME:
   Labels of parameters for statistical parameters
 
-  VERSION: 1.1.0
+  VERSION: 1.2.0
 
   DESCRIPTION:
   Parameters for statistical evaluation for general usage in various projects.
@@ -25,5 +25,6 @@
 
 static const char lblStatsIntervalTime[] PROGMEM = "intervalTime";
 static const char lblStatsMaximum[] PROGMEM = "maximum";
+static const char lblStatsHeartbeat[] PROGMEM = "heartbeat";
 
 #endif
