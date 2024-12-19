@@ -2,7 +2,7 @@
   NAME:
   Labels (names) of generic parameters
 
-  VERSION: 1.30.0
+  VERSION: 1.31.0
 
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
@@ -56,6 +56,8 @@ static const char lblWifiRevertTime[] PROGMEM = "wifiRevertTime";
 // Externals
 static const char lblLedStatus[] PROGMEM = "ledStatus";
 static const char lblInetStatus[] PROGMEM = "inetStatus";
+static const char lblAddressIpExt[] PROGMEM = "addressIpExt";
+static const char lblAddressIpExtTime[] PROGMEM = "addressIpExtTime";
 
 // Errors
 static const char lblErrorRestart[] PROGMEM = "errorRestart";
