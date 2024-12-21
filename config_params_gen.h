@@ -2,7 +2,7 @@
   NAME:
   Labels (names) of generic parameters
 
-  VERSION: 1.32.0
+  VERSION: 1.33.0
 
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
@@ -33,6 +33,7 @@ static const char lblActive[] PROGMEM = "active";
 static const char lblOutageTime[] PROGMEM = "outageTime";
 static const char lblRevertTime[] PROGMEM = "revertTime";
 static const char lblSignals[] PROGMEM = "signals";
+static const char lblRandomHourMinute[] PROGMEM = "randomHourMinute";
 
 // Firmware
 static const char lblProject[] PROGMEM = "project";
