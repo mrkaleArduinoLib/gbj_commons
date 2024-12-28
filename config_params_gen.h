@@ -2,7 +2,7 @@
   NAME:
   Labels (names) of generic parameters
 
-  VERSION: 1.34.0
+  VERSION: 1.35.0
 
   DESCRIPTION:
   Generic parameters are utilized almost in every project, especially which
@@ -44,6 +44,7 @@ static const char lblMcuBoot[] PROGMEM = "mcuBoot";
 static const char lblMcuRestarts[] PROGMEM = "mcuRestarts";
 static const char lblMcuReboot[] PROGMEM = "mcuReboot";
 static const char lblMcuUpTime[] PROGMEM = "mcuUpTime";
+static const char lblFsFormatTime[] PROGMEM = "fsFormatTime";
 
 // Wifi
 static const char lblRssi[] PROGMEM = "rssi";
