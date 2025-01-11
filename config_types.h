@@ -3,7 +3,7 @@
   NAME:
   Custom types and structures.
 
-  VERSION: 1.3.0
+  VERSION: 1.4.0
 
   DESCRIPTION:
   Definition of shared types, structures, unions, etc.
@@ -34,5 +34,12 @@ typedef struct EspnowUptime
   word deviceId;
   unsigned long uptime;
 } EspnowUptime;
+
+// Structure for email, whatsup and other notifications
+typedef struct Notification
+{
+  String subject;
+  String message;
+} Notification;
 
 #endif
