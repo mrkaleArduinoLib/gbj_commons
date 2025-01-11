@@ -35,7 +35,7 @@ typedef struct EspnowUptime
   unsigned long uptime;
 } EspnowUptime;
 
-// Structure for email, whatsup and other notifications
+// Structure for email, whatsapp and other notifications
 typedef struct Notification
 {
   String subject;
