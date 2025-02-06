@@ -1,14 +1,11 @@
-/*
-  NAME:
-  Labels (names) of generic parameters
+/** Labels (names) of generic parameters.
 
-  VERSION: 1.35.0
+Generic parameters are utilized almost in every project, especially which
+communicates over Wifi and with IoT platforms.
+The labels are stored in program flash memory in order to save
+SRAM of a microcontroller.
 
-  DESCRIPTION:
-  Generic parameters are utilized almost in every project, especially which
-  communicates over Wifi and with IoT platforms.
-  The labels are stored in program flash memory in order to save
-  SRAM of a microcontroller.
+VERSION: 1.36.0
 
 */
 #ifndef CONFIG_PARAMS_GEN_H
@@ -54,6 +51,8 @@ static const char lblAddressIp[] PROGMEM = "addressIP";
 static const char lblAddressMac[] PROGMEM = "addressMAC";
 static const char lblWifiOutageTime[] PROGMEM = "wifiOutageTime";
 static const char lblWifiRevertTime[] PROGMEM = "wifiRevertTime";
+static const char lblWifiStatus[] PROGMEM = "wifiStatus";
+static const char lblWifiRestart[] PROGMEM = "wifiRestart";
 
 // Externals
 static const char lblLedStatus[] PROGMEM = "ledStatus";
