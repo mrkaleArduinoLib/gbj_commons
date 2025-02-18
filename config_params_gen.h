@@ -5,7 +5,7 @@ communicates over Wifi and with IoT platforms.
 The labels are stored in program flash memory in order to save
 SRAM of a microcontroller.
 
-VERSION: 1.36.0
+VERSION: 1.37.0
 
 */
 #ifndef CONFIG_PARAMS_GEN_H
@@ -66,8 +66,10 @@ static const char lblDdnsPayloadTime[] PROGMEM = "ddnsPayloadTime";
 static const char lblErrorRestart[] PROGMEM = "errorRestart";
 static const char lblErrorCount[] PROGMEM = "errorCount";
 static const char lblErrorLimit[] PROGMEM = "errorLimit";
+static const char lblErrorTime[] PROGMEM = "errorTime";
+static const char lblErrorTimeStart[] PROGMEM = "errorTimeStart";
+static const char lblErrorTimeStop[] PROGMEM = "errorTimeStop";
 static const char lblErrorWifi[] PROGMEM = "errorWifi";
 static const char lblErrorGsheets[] PROGMEM = "errorGsheets";
-static const char lblErrorEspnow[] PROGMEM = "errorEspnow";
 static const char lblErrorThermo[] PROGMEM = "errorThermo";
 #endif
