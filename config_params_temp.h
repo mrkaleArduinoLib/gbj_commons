@@ -2,7 +2,7 @@
   NAME:
   Labels of parameters for temperature measurement
 
-  VERSION: 1.5.0
+  VERSION: 1.6.0
 
   DESCRIPTION:
   Parameters for temperature measurement regardless of utilized temperature
@@ -40,5 +40,9 @@ static const char lblTempMax[] PROGMEM = "tempMax";
 static const char lblTempMin[] PROGMEM = "tempMin";
 static const char lblTempMaxTime[] PROGMEM = "tempMaxTime";
 static const char lblTempMinTime[] PROGMEM = "tempMinTime";
+
+static const char lblErrorThermo[] PROGMEM = "errorThermo";
+static const char lblErrorThermoBlock[] PROGMEM = "errorThermoBlock";
+
 
 #endif
