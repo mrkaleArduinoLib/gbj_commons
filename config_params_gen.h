@@ -4,7 +4,7 @@
  * which communicates over Wifi and with IoT platforms. The labels are stored in
  * program flash memory in order to save SRAM of a microcontroller.
 
- * @version 1.41.0
+ * @version 1.42.0
  */
 #ifndef CONFIG_PARAMS_GEN_H
 #define CONFIG_PARAMS_GEN_H
@@ -55,6 +55,7 @@ static const char lblWifiRestart[] PROGMEM = "wifiRestart";
 // Externals
 static const char lblLedStatus[] PROGMEM = "ledStatus";
 static const char lblInetStatus[] PROGMEM = "inetStatus";
+static const char lblWhatsappStatus[] PROGMEM = "whatsappStatus";
 static const char lblInetOutageTime[] PROGMEM = "internetOutageTime";
 static const char lblInetRevertTime[] PROGMEM = "internetRevertTime";
 static const char lblAddressIpExt[] PROGMEM = "addressIpExt";
